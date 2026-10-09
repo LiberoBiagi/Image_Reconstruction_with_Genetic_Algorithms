@@ -204,6 +204,7 @@ The best RMSE drops from **92.15** to **36.35** in the first 100 generations, th
 <p align="center">
   <img src="assets/ga_convergence.png" alt="GA best RMSE over generations" width="70%">
 </p>
+
 #### Hill Climbing
  
 The long HC run recovers recognizable facial structure and even the pearl earring (RMSE of the five best solutions between about 18.8 and 21.2).
@@ -211,6 +212,7 @@ The long HC run recovers recognizable facial structure and even the pearl earrin
 <p align="center">
   <img src="assets/hc_best_solutions.png" alt="Best solutions found by Hill Climbing" width="100%">
 </p>
+
 #### GA vs. HC
  
 | Condition | Runs | Steps | Mean final RMSE |
