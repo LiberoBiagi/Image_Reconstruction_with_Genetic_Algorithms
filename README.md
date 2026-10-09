@@ -28,10 +28,13 @@ A **Genetic Algorithm (GA)** evolves a population of candidate images, each made
 ---
  
 ## Overview
- 
+
 - Each **individual** is a complete candidate image: an ordered list of **100 triangles**, each defined by 3 vertices and an RGB color.
+
 - Triangles are rendered sequentially, so later triangles can cover earlier ones. Layering lets both global structure and fine detail emerge.
+
 - **Fitness** is the pixel-wise RGB **RMSE** against the target image (lower is better):
+
 $$
 \text{RMSE} = \sqrt{\frac{1}{N}\sum_{i=1}^{N}(I_i - G_i)^2}
 $$
@@ -201,14 +204,14 @@ The best RMSE drops from **92.15** to **36.35** in the first 100 generations, th
 <p align="center">
   <img src="assets/ga_convergence.png" alt="GA best RMSE over generations" width="70%">
 </p>
-### Hill Climbing
+#### Hill Climbing
  
 The long HC run recovers recognizable facial structure and even the pearl earring (RMSE of the five best solutions between about 18.8 and 21.2).
  
 <p align="center">
   <img src="assets/hc_best_solutions.png" alt="Best solutions found by Hill Climbing" width="100%">
 </p>
-### GA vs. HC
+#### GA vs. HC
  
 | Condition | Runs | Steps | Mean final RMSE |
 |---|---|---|---|
